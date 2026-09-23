@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Literatura del Siglo XIX: El Romanticismo</title>
+    <!-- Google Fonts for a gorgeous Romanticist style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Main Header & Controls -->
+        <header id="main-header">
+            <div class="logo">
+                <span class="ornament">❦</span> Romanticismo s.XIX
+            </div>
+            <div class="header-controls">
+                <button id="btn-index" title="Mostrar índice (I)">
+                    <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                    <span>Índice</span>
+                </button>
+                <button id="btn-fullscreen" title="Pantalla completa (F)">
+                    <svg viewBox="0 0 24 24" width="20" height="20" id="icon-fs-enter"><path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                    <svg viewBox="0 0 24 24" width="20" height="20" id="icon-fs-exit" style="display: none;"><path fill="currentColor" d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"/></svg>
+                    <span>Pantalla Completa</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Index Menu -->
+        <aside id="sidebar-index" class="hidden">
+            <div class="sidebar-header">
+                <h3>Índice de Diapositivas</h3>
+                <button id="btn-close-index">&times;</button>
+            </div>
+            <nav class="slides-nav">
+                <ol id="index-list">
+                    <!-- Javascript will populate this list -->
+                </ol>
+            </nav>
+        </aside>
+
+        <!-- Main Slide Viewer -->
+        <main id="presentation-viewport">
+            <!-- Slide 1: Portada -->
+            <section class="slide active-slide" id="slide-1" data-title="Portada">
+                <div class="slide-content cover-layout">
+                    <div class="title-frame">
+                        <div class="border-top"></div>
+                        <h1 class="main-title">LA LITERATURA DEL SIGLO XIX.<br><span class="highlight">ROMANTICISMO</span></h1>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="cover-meta">
+                        <p class="institution">IES TORRE DEL REI</p>
+                        <p class="author">Prof. Nuria Ribés</p>
+                    </div>
+                    <!-- Background decor from extracted shapes -->
+                    <div class="decor-shape shape-left"><img src="extracted_assets/image3.png" alt="" class="decor-img"></div>
+                    <div class="decor-shape shape-right"><img src="extracted_assets/image4.png" alt="" class="decor-img"></div>
+                    <div class="decor-shape shape-bottom"><img src="extracted_assets/image26.png" alt="" class="decor-img"></div>
+                </div>
+            </section>
+
+            <!-- Slide 2: Contenidos -->
+            <section class="slide" id="slide-2" data-title="Contenidos">
+                <div class="slide-content two-columns">
+                    <div class="column-text">
+                        <h2 class="slide-title">CONTENIDOS</h2>
+                        <ul class="main-list">
+                            <li><span class="bullet">❈</span> Contexto histórico. 1ª mitad siglo XIX</li>
+                            <li><span class="bullet">❈</span> El Romanticismo:
+                                <ul class="sub-list">
+                                    <li><span class="bullet">❂</span> Características generales</li>
+                                    <li><span class="bullet">❂</span> Poesía romántica
+                                        <ul class="sub-sub-list">
+                                            <li>José de Espronceda</li>
+                                            <li>Bécquer</li>
+                                            <li>Escritoras románticas</li>
+                                        </ul>
+                                    </li>
+                                    <li><span class="bullet">❂</span> Prosa romántica
+                                        <ul class="sub-sub-list">
+                                            <li>Larra</li>
+                                        </ul>
+                                    </li>
+                                    <li><span class="bullet">❂</span> Teatro romántico</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-media">
+                        <div class="image-wrapper zoomable">
+                            <img src="extracted_assets/image11.png" alt="Contenidos Ilustración">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: Contexto Histórico -->
+            <section class="slide" id="slide-3" data-title="Contexto Histórico (Línea)">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">CONTEXTO HISTÓRICO</h2>
+                    <div class="image-showcase">
+                        <div class="image-wrapper banner zoomable">
+                            <img src="extracted_assets/image27.png" alt="Línea temporal histórica">
+                        </div>
+                        <div class="image-wrapper center-pic zoomable">
+                            <img src="extracted_assets/image19.png" alt="Retrato histórico">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 4: Contexto Histórico Detalle -->
+            <section class="slide" id="slide-4" data-title="Contexto Histórico (Detalle)">
+                <div class="slide-content two-columns">
+                    <div class="column-text">
+                        <h2 class="slide-title">CONTEXTO HISTÓRICO</h2>
+                        <p class="subtitle">Un comienzo de siglo de gran inestabilidad…</p>
+                        <ul class="main-list">
+                            <li><span class="bullet">❈</span> La <strong>Guerra de la Independencia</strong> (1808-1814)
+                                <ul class="sub-list">
+                                    <li>1812: la constitución de Cádiz (la Pepa)</li>
+                                </ul>
+                            </li>
+                            <li><span class="bullet">❈</span> <strong>Fernando VII</strong> (1814-1833): la restauración del absolutismo</li>
+                            <li><span class="bullet">❈</span> El reinado de <strong>Isabel II</strong> (1833-1868)</li>
+                        </ul>
+                    </div>
+                    <div class="column-media">
+                        <div class="image-wrapper zoomable">
+                            <img src="extracted_assets/espana_inicios_s_XIX.jpg" alt="La España de inicios del siglo XIX">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 5: Antes de empezar -->
+            <section class="slide" id="slide-5" data-title="Antes de Empezar (Vídeo)">
+                <div class="slide-content two-columns">
+                    <div class="column-text">
+                        <h2 class="slide-title">EL ROMANTICISMO. Antes de empezar…</h2>
+                        <div class="interactive-prompt">
+                            <p class="question"><strong>¿Qué entiendes por Romanticismo literario?</strong></p>
+                            <p class="question"><strong>Explícalo en dos o tres líneas.</strong></p>
+                        </div>
+                    </div>
+                    <div class="column-media">
+                        <!-- Video widget -->
+                        <div class="video-container zoomable-media" data-media-type="video">
+                            <video controls preload="metadata">
+                                <source src="extracted_assets/media1.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de vídeo.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 6: Evolución temas y formas -->
+            <section class="slide" id="slide-6" data-title="Evolución Temas y Formas">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. Evolución temas y formas</h2>
+                    <div class="image-showcase full-gallery">
+                        <div class="image-wrapper zoomable">
+                            <img src="extracted_assets/image29.png" alt="Esquema Evolución Romanticismo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7: Características Generales (Imágenes con Pies de Foto Intercambiados y Toggles) -->
+            <section class="slide" id="slide-7" data-title="Características (Obras)">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. Características generales</h2>
+                    <div class="artwork-comparison">
+                        <!-- Card 1: Friedrich's image, David's caption -->
+                        <div class="artwork-card" id="art-card-1">
+                            <div class="image-wrapper zoomable-art" title="Haz clic en la imagen para ver el pie de foto">
+                                <img src="extracted_assets/image30.png" alt="Caminante sobre un mar de nubes">
+                                <button class="btn-zoom-art" title="Ampliar imagen">🔍</button>
+                            </div>
+                            <div class="artwork-info hidden-caption">
+                                <p class="artwork-title">El juramento de los Horacios,</p>
+                                <p class="artwork-author">Jaques-Louis David, 1784</p>
+                            </div>
+                        </div>
+                        <!-- Card 2: David's image, Friedrich's caption -->
+                        <div class="artwork-card" id="art-card-2">
+                            <div class="image-wrapper zoomable-art" title="Haz clic en la imagen para ver el pie de foto">
+                                <img src="extracted_assets/image31.png" alt="El juramento de los Horacios">
+                                <button class="btn-zoom-art" title="Ampliar imagen">🔍</button>
+                            </div>
+                            <div class="artwork-info hidden-caption">
+                                <p class="artwork-title">Caminante sobre un mar de nubes,</p>
+                                <p class="artwork-author">Caspar David Friedrich (1818)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8: Características Generales (Agrupadas Diapositivas 8 y 9 en una sola) -->
+            <section class="slide" id="slide-8" data-title="Características generales">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. Características generales</h2>
+                    <p class="intro-p compact-p">En España, el Romanticismo, movimiento ideológico y estético, se inicia en <strong>1834</strong> con el regreso de los liberales exiliados tras la muerte de Fernando VII.</p>
+                    
+                    <div class="characteristics-grid">
+                        <div class="feature-item compact-card">
+                            <h3><strong>Subjetivismo</strong></h3>
+                            <p>Importancia de los sentimientos individuales, frecuentemente exaltados o melancólicos. El <strong>individualismo</strong> romántico se traduce en rebeldía contra las normas estéticas y sociales.</p>
+                        </div>
+                        <div class="feature-item compact-card">
+                            <h3><strong>Evasión de la realidad</strong></h3>
+                            <p>A través del tiempo (novelas históricas) y del espacio (escenarios lejanos y exóticos).</p>
+                        </div>
+                        <div class="feature-item compact-card">
+                            <h3><strong>Importancia del paisaje</strong></h3>
+                            <p>Forma de mostrar sus sentimientos.</p>
+                        </div>
+                        <div class="feature-item compact-card card-centered-row2-left">
+                            <h3><strong>Irracionalismo y desmesura</strong></h3>
+                            <p>Desaparece la mesura, la medida, la armonía y la proporción que dan paso a la belleza de la noche, de lo oscuro, de lo desmesurado.</p>
+                        </div>
+                        <div class="feature-item compact-card card-centered-row2-right">
+                            <h3><strong>Libertad creadora</strong></h3>
+                            <p>Las reglas del arte se ignoran. Así, mezclan en la misma obra la prosa y el verso, o fragmentos líricos, narrativos y dramáticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 9: Actividades 1 -->
+            <section class="slide activity-slide" id="slide-9" data-title="Actividades (Pág 41)">
+                <div class="slide-content activity-layout">
+                    <div class="activity-card">
+                        <div class="badge">ACTIVIDADES</div>
+                        <h2 class="activity-title">Propuesta de Trabajo</h2>
+                        <p class="task-description">Realiza las actividades en tu cuaderno:</p>
+                        <div class="page-reference">
+                            <span class="pages">Pág. 41</span>
+                            <span class="exercises">nº 21, 23</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 10: La Poesía -->
+            <section class="slide" id="slide-10" data-title="La Poesía (Intro)">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. La poesía</h2>
+                    <div class="artwork-showcase">
+                        <div class="image-wrapper zoomable main-poetry-art">
+                            <img src="extracted_assets/image32.png" alt="Grabado romántico de poesía">
+                        </div>
+                        <div class="image-wrapper zoomable side-poetry-art">
+                            <img src="extracted_assets/image33.png" alt="Poeta inspirado">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 11: José de Espronceda -->
+            <section class="slide" id="slide-11" data-title="José de Espronceda">
+                <div class="slide-content two-columns">
+                    <div class="column-text">
+                        <h2 class="slide-title">EL ROMANTICISMO. La poesía<br><span class="author-subtitle">José de Espronceda (1808-1842)</span></h2>
+                        <p class="intro-p">Espronceda representa al poeta romántico por excelencia: exaltado, rebelde y apasionado.</p>
+                        <p class="intro-p">De ideología <strong>liberal</strong>, fue perseguido por este motivo y padeció el exilio.</p>
+                        
+                        <div class="info-grid">
+                            <div class="grid-card">
+                                <h3><strong>Temas</strong></h3>
+                                <p>Patriotismo, protesta política, desengaño vital, personajes marginales.</p>
+                            </div>
+                            <div class="grid-card">
+                                <h3><strong>Características</strong></h3>
+                                <p>Estilo sonoro e intenso (rimas agudas, exclamaciones, interrogaciones retóricas, intensa adjetivación). Polimetría.</p>
+                            </div>
+                        </div>
+                        <div class="works-card">
+                            <h3><strong>Obras</strong></h3>
+                            <ul>
+                                <li><strong>Poesía lírica</strong>: La canción del pirata</li>
+                                <li><strong>Poesía narrativa</strong>: El estudiante de Salamanca</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column-media portrait-layout">
+                        <div class="portrait-collage">
+                            <div class="image-wrapper portrait zoomable">
+                                <img src="extracted_assets/portrait_espronceda.jpg" alt="Retrato de José de Espronceda">
+                            </div>
+                            <div class="badge-collage">
+                                <img src="extracted_assets/image35.png" alt="Decoración de época" class="decor-collage-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 12: Actividad Espronceda -->
+            <section class="slide activity-slide" id="slide-12" data-title="Actividad (Pág 43)">
+                <div class="slide-content activity-layout">
+                    <div class="activity-card">
+                        <div class="badge">ACTIVIDAD</div>
+                        <h2 class="activity-title">Lectura y Análisis</h2>
+                        <p class="task-description">Analiza el poema de Espronceda:</p>
+                        <div class="page-reference">
+                            <span class="pages">Pág. 43</span>
+                            <span class="exercises">nº 27</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 13: Gustavo Adolfo Bécquer I -->
+            <section class="slide" id="slide-13" data-title="Bécquer I">
+                <div class="slide-content two-columns">
+                    <div class="column-text">
+                        <h2 class="slide-title">EL ROMANTICISMO. La poesía<br><span class="author-subtitle">Gustavo Adolfo Bécquer (1836-1870)</span></h2>
+                        <p class="intro-p font-italic">Principal representante de la poesía posromántica.</p>
+                        <p class="intro-p">En su obra aparecen todas las <strong>características</strong> de esta <strong>etapa</strong>:</p>
+                        
+                        <ul class="styled-list">
+                            <li><span class="bullet">❧</span> Lengua poética sencilla y natural.</li>
+                            <li><span class="bullet">❧</span> Interés por el cantar popular.</li>
+                            <li><span class="bullet">❧</span> Intimismo.</li>
+                        </ul>
+                        
+                        <div class="works-card becquer-style">
+                            <h3><strong>Obra</strong>:</h3>
+                            <p>Rimas y leyendas (1871 - publicación póstuma)</p>
+                        </div>
+                    </div>
+                    <div class="column-media">
+                        <div class="image-wrapper portrait zoomable">
+                            <img src="extracted_assets/image36.png" alt="Gustavo Adolfo Bécquer Retrato">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 14: Gustavo Adolfo Bécquer II -->
+            <section class="slide" id="slide-14" data-title="Bécquer II">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. La poesía<br><span class="author-subtitle">Gustavo Adolfo Bécquer (1836-1870)</span></h2>
+                    
+                    <div class="poetry-analysis-grid">
+                        <div class="analysis-card">
+                            <h3><strong>Características</strong></h3>
+                            <p>Lenguaje muy trabajado para conseguir una apariencia de sencillez.</p>
+                        </div>
+                        <div class="analysis-card">
+                            <h3>Recursos comunes con la poesía tradicional:</h3>
+                            <ul class="sub-list">
+                                <li>Rima asonante.</li>
+                                <li>Mezcla de versos cortos y largos que aumentan el ritmo del poema.</li>
+                            </ul>
+                        </div>
+                        <div class="analysis-card">
+                            <h3>Figuras estilísticas que refuerzan el ritmo:</h3>
+                            <ul class="sub-list">
+                                <li>Anáforas</li>
+                                <li>Paralelismos</li>
+                                <li>Antítesis</li>
+                            </ul>
+                        </div>
+                        <div class="analysis-card">
+                            <p class="natural-resource">Comparaciones y metáforas con base en la naturaleza.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 15: Actividades Bécquer -->
+            <section class="slide activity-slide" id="slide-15" data-title="Actividades (Bécquer)">
+                <div class="slide-content activity-layout">
+                    <div class="activity-card">
+                        <div class="badge">ACTIVIDADES</div>
+                        <h2 class="activity-title">Comentario de Rimas</h2>
+                        <p class="task-description">Realiza en el cuaderno las actividades propuestas:</p>
+                        <div class="page-reference double">
+                            <div class="ref-block">
+                                <span class="pages">Pág. 44</span>
+                                <span class="exercises">nº 28</span>
+                            </div>
+                            <div class="ref-block">
+                                <span class="pages">Pág. 45</span>
+                                <span class="exercises">nº 30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 16: Escritoras Románticas I -->
+            <section class="slide" id="slide-16" data-title="Escritoras I">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. La poesía<br><span class="author-subtitle">Escritoras románticas</span></h2>
+                    
+                    <div class="female-writers-intro">
+                        <p class="highlight-quote">Rompieron las convenciones sociales que les impedían acceder a los estudios superiores o dedicarse a la literatura. Eran consideradas mujeres disfuncionales o "locas".</p>
+                    </div>
+
+                    <div class="two-columns gap-medium">
+                        <div class="writer-card">
+                            <h3><strong>Gertrudis Gómez de Avellaneda (1814-1873)</strong></h3>
+                            <ul class="sub-list">
+                                <li>Originaria de Cuba → temas antiesclavistas.</li>
+                                <li>Poemas melancólicos y pesimistas sobre el amor y la existencia.</li>
+                            </ul>
+                        </div>
+                        <div class="writer-card">
+                            <h3><strong>Carolina Coronado (1823-1911)</strong></h3>
+                            <ul class="sub-list">
+                                <li>Educada en un ambiente liberal.</li>
+                                <li>Temas: la opresión y la esclavitud que domina el “destino femenino”.</li>
+                                <li>Intimista, similar a Bécquer.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 17: Escritoras Románticas II (Rosalía de Castro - Texto Alineado con Vídeo) -->
+            <section class="slide" id="slide-17" data-title="Rosalía de Castro">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. La poesía<br><span class="author-subtitle">Escritoras románticas</span></h2>
+                    
+                    <div class="two-columns align-top">
+                        <div class="column-text">
+                            <div class="rosalia-box">
+                                <h3 class="writer-highlight-title"><strong>Rosalía de Castro (1837-1885)</strong></h3>
+                                <p class="writer-desc">La gran voz de la literatura gallega del siglo XIX. Su poesía exalta la nostalgia (morriña), la injusticia social y la dureza del destino.</p>
+                                
+                                <div class="works-card rosalia-style">
+                                    <h4>Obras clave:</h4>
+                                    <ul class="sub-list">
+                                        <li>Cantares gallegos</li>
+                                        <li>Follas novas</li>
+                                        <li>En las orillas del Sar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-media">
+                            <div class="video-container zoomable-media" data-media-type="video">
+                                <video controls preload="metadata" poster="extracted_assets/image37.png">
+                                    <source src="extracted_assets/media2.mp4" type="video/mp4">
+                                    Tu navegador no soporta el elemento de vídeo.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 18: Actividades Comentario de Texto -->
+            <section class="slide activity-slide" id="slide-18" data-title="Comentario Texto (pág 53)">
+                <div class="slide-content two-columns">
+                    <div class="column-text">
+                        <div class="activity-card no-margin">
+                            <div class="badge">COMENTARIO</div>
+                            <h2 class="activity-title">Comentario de texto</h2>
+                            <div class="page-reference">
+                                <span class="pages">Pág. 53</span>
+                                <span class="exercises">(todas las actividades)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-media sound-showcase">
+                        <!-- Custom Audio Player card -->
+                        <div class="audio-player-card">
+                            <div class="audio-album-art zoomable">
+                                <img src="extracted_assets/image38.png" alt="Tierra Santa - La Canción del Pirata">
+                            </div>
+                            <div class="audio-details">
+                                <h4 class="track-title">La Canción del Pirata</h4>
+                                <p class="track-artist">Tierra Santa (I y II)</p>
+                            </div>
+                            <audio id="pirata-audio" controls>
+                                <source src="extracted_assets/media3.mp3" type="audio/mp3">
+                                Tu navegador no soporta el elemento de audio.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 19: La Prosa (Imagen debajo del texto) -->
+            <section class="slide" id="slide-19" data-title="La Prosa (Intro)">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. La prosa</h2>
+                    <div class="prose-theme-vertical">
+                        <div class="prose-points-row">
+                            <div class="prose-point">
+                                <span class="poetry-bullet">❧</span>
+                                <p>El héroe individual frente a cualquier tipo de opresión.</p>
+                            </div>
+                            <div class="prose-point">
+                                <span class="poetry-bullet">❧</span>
+                                <p>El pasado como escenario ideal para la idealización novelesca.</p>
+                            </div>
+                        </div>
+                        <div class="image-wrapper zoomable illustration-prose-vertical">
+                            <img src="extracted_assets/image39.png" alt="Ilustración Prosa Romántica">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 20: Larra I -->
+            <section class="slide" id="slide-20" data-title="Larra I">
+                <div class="slide-content two-columns">
+                    <div class="column-text">
+                        <h2 class="slide-title">EL ROMANTICISMO. La prosa<br><span class="author-subtitle">Mariano José de Larra (1809-1837)</span></h2>
+                        
+                        <div class="author-bio">
+                            <ul class="styled-list">
+                                <li><span class="bullet">❦</span> Vida atormentada y compleja.</li>
+                                <li><span class="bullet">❦</span> Periodista relevante de su época.</li>
+                                <li><span class="bullet">❦</span> Principal obra: <strong>artículos periodísticos</strong>.
+                                    <ul class="sub-list">
+                                        <li>Artículos de crítica literaria</li>
+                                        <li>Artículos de costumbres</li>
+                                        <li>Artículos políticos</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column-media">
+                        <div class="image-wrapper portrait zoomable larra-portrait-wrapper">
+                            <img src="extracted_assets/image40.png" alt="Mariano José de Larra Retrato" class="larra-portrait-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 21: Larra II -->
+            <section class="slide" id="slide-21" data-title="Larra II (Caricatura)">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. La prosa<br><span class="author-subtitle">Mariano José de Larra (1809-1837)</span></h2>
+                    <div class="image-showcase single-centered">
+                        <div class="image-wrapper zoomable style-large-img">
+                            <img src="extracted_assets/image41.png" alt="Caricatura o Ilustración histórica de Larra">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 22: Actividades Larra -->
+            <section class="slide activity-slide" id="slide-22" data-title="Actividades (Larra)">
+                <div class="slide-content activity-layout">
+                    <div class="activity-card">
+                        <div class="badge">ACTIVIDADES</div>
+                        <h2 class="activity-title">Análisis de Artículos</h2>
+                        <p class="task-description">Lee los artículos de Larra y responde:</p>
+                        <div class="page-reference">
+                            <span class="pages">Pág. 49</span>
+                            <span class="exercises">nº 43, 44</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 23: El Teatro -->
+            <section class="slide" id="slide-23" data-title="El Teatro">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. El teatro</h2>
+                    <div class="theatre-features">
+                        <div class="highlight-box">
+                            <p>Fue el género de más éxito del Romanticismo.</p>
+                        </div>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <h3><strong>Características</strong></h3>
+                                <p>Las obras rompen la unidad de acción, de tiempo y de lugar (regla de las tres unidades).</p>
+                            </div>
+                            <div class="feature-card">
+                                <p>Mezclan lo trágico con lo cómico y la prosa con el verso.</p>
+                            </div>
+                            <div class="feature-card">
+                                <p>La escenografía es muy importante.</p>
+                            </div>
+                            <div class="feature-card warning">
+                                <p>El final trágico de los protagonistas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 24: El Teatro - Autores (Texto Alineado con Vídeo) -->
+            <section class="slide" id="slide-24" data-title="Teatro Autores">
+                <div class="slide-content vertical-layout">
+                    <h2 class="slide-title">EL ROMANTICISMO. El teatro</h2>
+                    
+                    <div class="two-columns align-top">
+                        <div class="column-text">
+                            <div class="theatre-authors">
+                                <div class="author-block">
+                                    <h3><strong>Duque de Rivas (1792-1865)</strong></h3>
+                                    <p class="work-title">Don Álvaro o la <strong>fuerza</strong> del <strong>sino</strong></p>
+                                </div>
+                                
+                                <hr class="separator">
+                                
+                                <div class="author-block">
+                                    <h3><strong>José Zorrilla (1817-1893)</strong></h3>
+                                    <p class="work-title">Don Juan Tenorio</p>
+                                    <ul class="sub-list">
+                                        <li>Creación del personaje y mito del “Don Juan”.</li>
+                                        <li>Escrita íntegramente en verso.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-media flex-column-media">
+                            <div class="video-container zoomable-media" data-media-type="video">
+                                <video controls preload="metadata" poster="extracted_assets/image42.png">
+                                    <source src="extracted_assets/media4.mp4" type="video/mp4">
+                                    Tu navegador no soporta el elemento de vídeo.
+                                </video>
+                            </div>
+                            <div class="video-subtitle">Escena Don Juan Tenorio</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 25: Actividades Teatro -->
+            <section class="slide activity-slide" id="slide-25" data-title="Actividades (Teatro)">
+                <div class="slide-content activity-layout">
+                    <div class="activity-card">
+                        <div class="badge">ACTIVIDADES</div>
+                        <h2 class="activity-title">Estudio de Don Juan</h2>
+                        <p class="task-description">Realiza la actividad sobre el teatro romántico:</p>
+                        <div class="page-reference">
+                            <span class="pages">Pág. 51</span>
+                            <span class="exercises">nº 47</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bottom Controls -->
+        <footer id="presentation-controls">
+            <button id="btn-prev" class="btn-nav" title="Anterior (←)">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+            </button>
+            <div id="slide-counter">
+                <span id="current-slide-num">1</span> / <span id="total-slides-num">25</span>
+            </div>
+            <button id="btn-next" class="btn-nav" title="Siguiente (→ / Espacio)">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+            <!-- Progress Bar -->
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+        </footer>
+
+        <!-- Media Fullscreen Lightbox Modal (Moved inside #app-container for Fullscreen compatibility) -->
+        <div id="lightbox-modal" class="hidden">
+            <button id="btn-close-lightbox" title="Cerrar (Esc)">&times;</button>
+            <div id="lightbox-content">
+                <!-- Dynamically populated with img or video -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
